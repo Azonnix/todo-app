@@ -24,5 +24,5 @@ func (r *AuthPostgres) CreateUser(user todo.User) (int, error) {
 		return 0, err
 	}
 
-	return 0, nil
+	return id, nil
 }
