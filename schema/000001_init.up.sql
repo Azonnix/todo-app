@@ -13,7 +13,7 @@ CREATE TABLE todo_lists
     description varchar(255)
 );
 
-CREATE TABLE users_list
+CREATE TABLE users_lists
 (
     id serial not null unique,
     user_id int references users (id) on delete cascade not null,
