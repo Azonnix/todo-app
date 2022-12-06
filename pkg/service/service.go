@@ -5,6 +5,8 @@ import (
 	"github.com/azonnix/todo-app/pkg/repository"
 )
 
+//go:generate mockgen -source=service.go -destination=mocks/mock.go
+
 type Authorization interface {
 	CreateUser(user todo.User) (int, error)
 	GenerateTocken(username, password string) (string, error)
