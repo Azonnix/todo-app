@@ -68,7 +68,7 @@ func TestHandler_userIdentity(t *testing.T) {
 			mockBehavior: func(s *mock_service.MockAuthorization, tocken string) {
 				s.EXPECT().ParseToken(tocken).Return(1, errors.New("faild to parse tocken"))
 			},
-			expectedStatusCode:   401,
+			expectedStatusCode:   500,
 			expectedResponseBody: `{"message":"faild to parse tocken"}`,
 		},
 	}
