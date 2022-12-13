@@ -7,6 +7,7 @@ import (
 	"syscall"
 
 	"github.com/azonnix/todo-app"
+	_ "github.com/azonnix/todo-app/docs"
 	"github.com/azonnix/todo-app/pkg/handler"
 	"github.com/azonnix/todo-app/pkg/repository"
 	"github.com/azonnix/todo-app/pkg/service"
@@ -23,7 +24,7 @@ import (
 // @host localhost:8000
 // @BasePath /
 
-// @securityDefinition.apikey ApiKeyAuth
+// @securityDefinitions.apikey ApiKeyAuth
 // @in header
 // @name Authorization
 

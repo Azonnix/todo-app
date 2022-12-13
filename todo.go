@@ -3,7 +3,7 @@ package todo
 import "errors"
 
 type TodoList struct {
-	Id          int    `json:"id" db:"id"`
+	Id          int    `json:"-" db:"id"`
 	Title       string `json:"title" db:"title" binding:"required"`
 	Description string `json:"description" db:"description"`
 }
